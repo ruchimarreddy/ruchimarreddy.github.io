@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ruchirinkil Marreddy</title>
+  <style>
+    :root {
+      --bg: #f6f8fb;
+      --surface: #ffffff;
+      --text: #1f2937;
+      --muted: #6b7280;
+      --accent: #2563eb;
+      --border: #e5e7eb;
+      --shadow: 0 12px 30px rgba(15, 23, 42, 0.08);
+    }
+
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.65;
+    }
+
+    .nav {
+      position: sticky;
+      top: 0;
+      background: rgba(246, 248, 251, 0.92);
+      border-bottom: 1px solid var(--border);
+    }
+
+    .nav-inner,
+    .container {
+      width: min(1050px, calc(100% - 32px));
+      margin: 0 auto;
+    }
+
+    .nav-inner {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 16px 0;
+    }
+
+    .brand {
+      font-weight: 700;
+      font-size: 1rem;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 18px;
+      flex-wrap: wrap;
+    }
+
+    .nav a {
+      color: var(--text);
+      text-decoration: none;
+      font-size: 0.95rem;
+    }
+
+    .hero {
+      padding: 72px 0 40px;
+    }
+
+    .hero-card,
+    .section-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 24px;
+      box-shadow: var(--shadow);
+    }
+
+    .hero-card {
+      padding: 48px;
+      display: grid;
+      gap: 18px;
+    }
+
+    .eyebrow {
+      color: var(--accent);
+      font-weight: 700;
+      text-transform: uppercase;
+      font-size: 0.84rem;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: clamp(2.2rem, 6vw, 3.7rem);
+      line-height: 1.1;
+    }
+
+    .subtitle {
+      font-size: 1.1rem;
+      color: var(--muted);
+      max-width: 760px;
+      margin: 0;
+    }
+
+    .button-row {
+      display: flex;
+      gap: 14px;
+      flex-wrap: wrap;
+      margin-top: 10px;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 12px 18px;
+      border-radius: 12px;
+      text-decoration: none;
+      font-weight: 700;
+    }
+
+    .btn-primary {
+      background: var(--accent);
+      color: white;
+    }
+
+    .btn-secondary {
+      border: 1px solid var(--border);
+      color: var(--text);
+      background: #fff;
+    }
+
+    main {
+      padding-bottom: 56px;
+    }
+
+    section {
+      margin-top: 26px;
+    }
+
+    .section-card {
+      padding: 34px;
+    }
+
+    h2 {
+      margin: 0 0 14px;
+      font-size: 1.6rem;
+    }
+
+    .muted {
+      color: var(--muted);
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 18px;
+    }
+
+    .item {
+      border: 1px solid var(--border);
+      border-radius: 18px;
+      padding: 18px;
+      background: #fff;
+    }
+
+    .item h3 {
+      margin: 0 0 8px;
+      font-size: 1.05rem;
+    }
+
+    .footer {
+      padding: 18px 0 50px;
+      color: var(--muted);
+      text-align: center;
+      font-size: 0.95rem;
+    }
+
+    a {
+      color: var(--accent);
+    }
+
+    @media (max-width: 760px) {
+      .hero-card, .section-card {
+        padding: 24px;
+      }
+
+      .grid {
+        grid-template-columns: 1fr;
+      }
+
+      .nav-inner {
+        align-items: flex-start;
+        gap: 12px;
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+<body>
+  <nav class="nav">
+    <div class="nav-inner">
+      <div class="brand">Ruchirinkil Marreddy</div>
+      <div class="nav-links">
+        <a href="#about">About</a>
+        <a href="#research">Research</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </div>
+  </nav>
+
+  <main class="container">
+    <section class="hero">
+      <div class="hero-card">
+        <div class="eyebrow">Purdue ECE · Graduating May 2026</div>
+        <h1>Deep learning, optimization, and neural network theory.</h1>
+        <p class="subtitle">
+          I am Ruchirinkil Marreddy, a master's student in Electrical and Computer Engineering at Purdue University. My interests include deep learning theory, Neural Tangent Kernel analysis, optimization, and training dynamics in modern neural networks.
+        </p>
+        <div class="button-row">
+          <a class="btn btn-primary" href="#projects">View Projects</a>
+          <a class="btn btn-secondary" href="#contact">Contact Me</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="about">
+      <div class="section-card">
+        <h2>About</h2>
+        <p>
+          I am currently pursuing my M.S. in Electrical and Computer Engineering at Purdue University. My work focuses on understanding learning dynamics in deep neural networks, with particular interest in optimization behavior, generalization, and NTK-based analysis.
+        </p>
+      </div>
+    </section>
+
+    <section id="research">
+      <div class="section-card">
+        <h2>Research Interests</h2>
+        <div class="grid">
+          <div class="item">
+            <h3>Deep Learning Theory</h3>
+            <p>Studying principled explanations for training and generalization in overparameterized neural networks.</p>
+          </div>
+          <div class="item">
+            <h3>Optimization</h3>
+            <p>Analyzing how optimization behaves across architectures and how theory compares with empirical training speed.</p>
+          </div>
+          <div class="item">
+            <h3>Neural Tangent Kernel</h3>
+            <p>Exploring NTK alignment, eigenspectra, and label-kernel interactions in modern models.</p>
+          </div>
+          <div class="item">
+            <h3>Training Dynamics</h3>
+            <p>Building experiments in PyTorch to study convergence, alignment growth, and layer-wise behavior.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects">
+      <div class="section-card">
+        <h2>Selected Projects</h2>
+        <div class="grid">
+          <div class="item">
+            <h3>NTK Alignment Across Architectures</h3>
+            <p>Empirical analysis of alignment trends in MLPs, CNNs, ResNets, and transformer-style models using PyTorch.</p>
+          </div>
+          <div class="item">
+            <h3>Layer-wise Training Dynamics</h3>
+            <p>Developed pipelines to track per-layer alignment, gradient statistics, and update behavior during training.</p>
+          </div>
+          <div class="item">
+            <h3>Optimization Theory for Neural Networks</h3>
+            <p>Compared worst-case spectral predictors with label-aware predictors to better explain observed convergence.</p>
+          </div>
+          <div class="item">
+            <h3>Machine Learning Experiments in PyTorch</h3>
+            <p>Implemented research-oriented experiments across classification and regression settings for modern architectures.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="section-card">
+        <h2>Contact</h2>
+        <p>Email: <a href="mailto:your-email@example.com">your-email@example.com</a></p>
+        <p>GitHub: <a href="https://github.com/ruchimarreddy" target="_blank">github.com/ruchimarreddy</a></p>
+        <p>LinkedIn: <a href="#">Add your LinkedIn link here</a></p>
+      </div>
+    </section>
+  </main>
+
+  <div class="footer">
+    © 2026 Ruchirinkil Marreddy
+  </div>
+</body>
+</html>
