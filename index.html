@@ -16,6 +16,7 @@
     }
 
     * { box-sizing: border-box; }
+
     html { scroll-behavior: smooth; }
 
     body {
@@ -29,7 +30,9 @@
     .nav {
       position: sticky;
       top: 0;
+      z-index: 20;
       background: rgba(246, 248, 251, 0.92);
+      backdrop-filter: blur(10px);
       border-bottom: 1px solid var(--border);
     }
 
@@ -84,6 +87,7 @@
     .eyebrow {
       color: var(--accent);
       font-weight: 700;
+      letter-spacing: 0.02em;
       text-transform: uppercase;
       font-size: 0.84rem;
     }
@@ -114,6 +118,7 @@
       border-radius: 12px;
       text-decoration: none;
       font-weight: 700;
+      transition: 0.2s ease;
     }
 
     .btn-primary {
@@ -126,6 +131,8 @@
       color: var(--text);
       background: #fff;
     }
+
+    .btn:hover { transform: translateY(-1px); }
 
     main {
       padding-bottom: 56px;
@@ -142,6 +149,10 @@
     h2 {
       margin: 0 0 14px;
       font-size: 1.6rem;
+    }
+
+    p {
+      margin: 0 0 14px;
     }
 
     .muted {
@@ -165,6 +176,13 @@
       margin: 0 0 8px;
       font-size: 1.05rem;
     }
+
+    ul {
+      margin: 12px 0 0;
+      padding-left: 20px;
+    }
+
+    li { margin-bottom: 8px; }
 
     .footer {
       padding: 18px 0 50px;
@@ -210,10 +228,10 @@
   <main class="container">
     <section class="hero">
       <div class="hero-card">
-        <div class="eyebrow">Purdue ECE · Graduating May 2026</div>
-        <h1>Deep learning, optimization, and neural network theory.</h1>
+        <div class="eyebrow">Purdue University · M.S. ECE · Graduating May 2026</div>
+        <h1>ML research engineer focused on training dynamics, stability, and generalization.</h1>
         <p class="subtitle">
-          I am Ruchirinkil Marreddy, a master's student in Electrical and Computer Engineering at Purdue University. My interests include deep learning theory, Neural Tangent Kernel analysis, optimization, and training dynamics in modern neural networks.
+          I am Ruchirinkil Marreddy, a master's student in Electrical and Computer Engineering at Purdue University. I build reliable experimentation and model evaluation pipelines in Python and PyTorch to study optimization behavior, Neural Tangent Kernel alignment, and learning dynamics across modern neural networks.
         </p>
         <div class="button-row">
           <a class="btn btn-primary" href="#projects">View Projects</a>
@@ -226,7 +244,10 @@
       <div class="section-card">
         <h2>About</h2>
         <p>
-          I am currently pursuing my M.S. in Electrical and Computer Engineering at Purdue University. My work focuses on understanding learning dynamics in deep neural networks, with particular interest in optimization behavior, generalization, and NTK-based analysis.
+          I am a Graduate Researcher at Purdue University working on deep learning theory and empirical analysis of modern neural networks. My research combines theory-driven questions with large-scale experiments, with a focus on optimization, training stability, generalization, and cross-architecture behavior in models such as CNNs, vision transformers, and GPT-style networks.
+        </p>
+        <p>
+          I am also interested in research engineering roles where I can build robust evaluation pipelines, analyze model behavior, and contribute to scalable experimentation workflows.
         </p>
       </div>
     </section>
@@ -236,20 +257,20 @@
         <h2>Research Interests</h2>
         <div class="grid">
           <div class="item">
-            <h3>Deep Learning Theory</h3>
-            <p>Studying principled explanations for training and generalization in overparameterized neural networks.</p>
-          </div>
-          <div class="item">
-            <h3>Optimization</h3>
-            <p>Analyzing how optimization behaves across architectures and how theory compares with empirical training speed.</p>
-          </div>
-          <div class="item">
-            <h3>Neural Tangent Kernel</h3>
-            <p>Exploring NTK alignment, eigenspectra, and label-kernel interactions in modern models.</p>
-          </div>
-          <div class="item">
             <h3>Training Dynamics</h3>
-            <p>Building experiments in PyTorch to study convergence, alignment growth, and layer-wise behavior.</p>
+            <p>Studying how deep neural networks learn over time and how optimization behavior differs across architectures and optimizers.</p>
+          </div>
+          <div class="item">
+            <h3>Generalization and Stability</h3>
+            <p>Designing evaluation metrics and analysis pipelines to understand robustness, inductive bias, and reliable model behavior.</p>
+          </div>
+          <div class="item">
+            <h3>Neural Tangent Kernel Analysis</h3>
+            <p>Exploring NTK alignment, eigenspectra, and label-kernel interactions to better explain convergence in modern deep learning systems.</p>
+          </div>
+          <div class="item">
+            <h3>Research Engineering</h3>
+            <p>Building reproducible experimentation workflows in Python and PyTorch for model evaluation, debugging, and large-scale empirical studies.</p>
           </div>
         </div>
       </div>
@@ -257,23 +278,23 @@
 
     <section id="projects">
       <div class="section-card">
-        <h2>Selected Projects</h2>
+        <h2>Selected Work</h2>
         <div class="grid">
           <div class="item">
-            <h3>NTK Alignment Across Architectures</h3>
-            <p>Empirical analysis of alignment trends in MLPs, CNNs, ResNets, and transformer-style models using PyTorch.</p>
+            <h3>NTK Alignment Across Modern Architectures</h3>
+            <p>Led PyTorch-based experiments analyzing training dynamics and generalization across CNNs, vision transformers, and GPT-style models, with emphasis on optimization behavior and alignment trends.</p>
           </div>
           <div class="item">
-            <h3>Layer-wise Training Dynamics</h3>
-            <p>Developed pipelines to track per-layer alignment, gradient statistics, and update behavior during training.</p>
+            <h3>Module-Level Analysis Pipelines</h3>
+            <p>Built custom Functorch-based pipelines to track module-level behavior, including attention and MLP blocks, diagnose bottlenecks, and guide optimizer and hyperparameter choices.</p>
           </div>
           <div class="item">
-            <h3>Optimization Theory for Neural Networks</h3>
-            <p>Compared worst-case spectral predictors with label-aware predictors to better explain observed convergence.</p>
+            <h3>Text-to-Image Generation via Transformers</h3>
+            <p>Developed a transformer-based text-to-image generation system inspired by CogView, combining a custom VQ-VAE autoencoder and transformer model trained on MS COCO.</p>
           </div>
           <div class="item">
-            <h3>Machine Learning Experiments in PyTorch</h3>
-            <p>Implemented research-oriented experiments across classification and regression settings for modern architectures.</p>
+            <h3>External Memory for Reinforcement Learning</h3>
+            <p>Developed a notebook-based external memory structure for reinforcement learning in partially observable environments, improving reward and task efficiency.</p>
           </div>
         </div>
       </div>
@@ -282,7 +303,7 @@
     <section id="contact">
       <div class="section-card">
         <h2>Contact</h2>
-        <p>Email: <a href="mailto:ruchirinkil.marreddy@gmail.com">ruchirinkil.marreddy@gmail.com</a></p>
+        <p>Email: <a href="mailto:rmarred@purdue.edu">rmarred@purdue.edu</a></p>
         <p>GitHub: <a href="https://github.com/ruchimarreddy" target="_blank">github.com/ruchimarreddy</a></p>
         <p>LinkedIn: <a href="www.linkedin.com/in/ruchirinkil-marreddy-9237061a5">www.linkedin.com/in/ruchirinkil-marreddy-9237061a5</a></p>
       </div>
