@@ -220,6 +220,10 @@
         <a href="#about">About</a>
         <a href="#research">Research</a>
         <a href="#projects">Projects</a>
+        <a href="#experience">Experience</a>
+        <a href="#publications">Publications & Talks</a>
+        <a href="#fun-facts">Fun Facts</a>
+        <a href="#resume">Resume</a>
         <a href="#contact">Contact</a>
       </div>
     </div>
@@ -228,14 +232,21 @@
   <main class="container">
     <section class="hero">
       <div class="hero-card">
-        <div class="eyebrow">Purdue University · M.S. ECE · Graduating May 2026</div>
-        <h1>ML research engineer focused on training dynamics, stability, optimization, and generalization.</h1>
-        <p class="subtitle">
-          I am Ruchirinkil Marreddy, a master's student in Electrical and Computer Engineering at Purdue University. I build reliable experimentation and model evaluation pipelines in Python and PyTorch to study optimization behavior, Neural Tangent Kernel alignment, and learning dynamics across modern neural networks.
-        </p>
-        <div class="button-row">
-          <a class="btn btn-primary" href="#projects">View Projects</a>
-          <a class="btn btn-secondary" href="#contact">Contact Me</a>
+        <div class="grid" style="grid-template-columns: 220px 1fr; align-items: center; gap: 28px;">
+          <div>
+            <img src="profile.jpg" alt="Ruchirinkil Marreddy" style="width: 100%; max-width: 220px; border-radius: 24px; border: 1px solid var(--border); box-shadow: var(--shadow); object-fit: cover; aspect-ratio: 1 / 1;" />
+          </div>
+          <div>
+            <div class="eyebrow">Purdue University · M.S. ECE · Graduating May 2026</div>
+            <h1>ML researcher focused on optimization, training dynamics, and generalization.</h1>
+            <p class="subtitle">
+              I am Ruchirinkil Marreddy, a master's student in Electrical and Computer Engineering at Purdue University. I work at the intersection of deep learning theory and empirical analysis, building experiments and evaluation pipelines in Python and PyTorch to better understand how modern neural networks train and generalize.
+            </p>
+            <div class="button-row">
+              <a class="btn btn-primary" href="#projects">View Projects</a>
+              <a class="btn btn-secondary" href="#resume">View Resume</a>
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -270,7 +281,7 @@
           </div>
           <div class="item">
             <h3>Research Engineering</h3>
-            <p>Building reproducible experimentation workflows in Python and PyTorch for model evaluation, debugging, and large-scale experimental studies.</p>
+            <p>Building reproducible experimentation workflows in Python and PyTorch for model evaluation, debugging, and large-scale empirical studies.</p>
           </div>
         </div>
       </div>
@@ -278,7 +289,7 @@
 
     <section id="projects">
       <div class="section-card">
-        <h2>Selected Work</h2>
+        <h2>Projects</h2>
         <div class="grid">
           <div class="item">
             <h3>NTK Alignment Across Modern Architectures</h3>
@@ -296,6 +307,94 @@
             <h3>External Memory for Reinforcement Learning</h3>
             <p>Developed a notebook-based external memory structure for reinforcement learning in partially observable environments, improving reward and task efficiency.</p>
           </div>
+          <div class="item">
+            <h3>Quantum Diffusion Denoising Probabilistic Model</h3>
+            <p>Re-implemented QuDDPM using Qiskit and Python, leveraging low-depth quantum circuits and evaluating performance with Maximum Mean Discrepancy loss.</p>
+          </div>
+          <div class="item">
+            <h3>AI WhatsApp Bot</h3>
+            <p>Built a chatbot prototype using FastAPI, Twilio WhatsApp Sandbox, and lightweight local language models to automate conversational replies through a webhook-based backend.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="experience">
+      <div class="section-card">
+        <h2>Experience</h2>
+        <div class="grid">
+          <div class="item">
+            <h3>Purdue University · Graduate Researcher</h3>
+            <p class="muted">Aug 2023 – Present</p>
+            <p>Conducting machine learning and AI research focused on training dynamics, stability, optimization, and generalization across modern neural architectures.</p>
+          </div>
+          <div class="item">
+            <h3>Purdue University · Graduate Teaching Assistant</h3>
+            <p class="muted">Jan 2024 – Present</p>
+            <p>Supported courses in graphical communication, spatial analysis, and power electronics through labs, feedback, and technical instruction.</p>
+          </div>
+          <div class="item">
+            <h3>Zoom Video Communications · Service Engineer</h3>
+            <p class="muted">Jul 2022 – Jul 2023</p>
+            <p>Resolved production ML issues, built internal automation tools, and improved issue resolution efficiency across Zoom product pipelines.</p>
+          </div>
+          <div class="item">
+            <h3>UST Global · Data Science Intern</h3>
+            <p class="muted">Jun 2021 – Jul 2021</p>
+            <p>Built an interface using OpenCV and machine learning to automate electricity meter bill generation from uploaded meter images.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="publications">
+      <div class="section-card">
+        <h2>Publications & Talks</h2>
+        <div class="grid">
+          <div class="item">
+            <h3>WiE 5th Annual Symposium, Purdue</h3>
+            <p class="muted">Presenter · February 2026</p>
+            <p>Presented research related to training dynamics and NTK alignment in modern neural networks.</p>
+          </div>
+          <div class="item">
+            <h3>Manuscript in Preparation</h3>
+            <p class="muted">Target submission: 2026</p>
+            <p>Working on a paper on understanding NTK alignment across different optimizers and neural architectures.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="fun-facts">
+      <div class="section-card">
+        <h2>Fun Facts About Me</h2>
+        <div class="grid">
+          <div class="item">
+            <h3>I like combining theory with experiments</h3>
+            <p>I enjoy asking mathematical questions about deep learning and then testing them with hands-on PyTorch experiments.</p>
+          </div>
+          <div class="item">
+            <h3>I have worked across different AI areas</h3>
+            <p>My projects span deep learning theory, reinforcement learning, text-to-image generation, and quantum machine learning.</p>
+          </div>
+          <div class="item">
+            <h3>I enjoy building practical systems too</h3>
+            <p>Along with research, I like making end-to-end tools and prototypes that connect AI ideas to real applications.</p>
+          </div>
+          <div class="item">
+            <h3>I value both research and communication</h3>
+            <p>I enjoy presenting ideas, improving clarity, and making technical work understandable to different audiences.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="resume">
+      <div class="section-card">
+        <h2>Resume</h2>
+        <p>You can add your resume PDF to this repository and link it here as <code>resume.pdf</code>.</p>
+        <div class="button-row">
+          <a class="btn btn-primary" href="resume.pdf" target="_blank">View Resume</a>
         </div>
       </div>
     </section>
